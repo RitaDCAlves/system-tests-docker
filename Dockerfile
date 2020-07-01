@@ -1,4 +1,4 @@
-FROM selenium/node-base:3.5.3-boron
+FROM node:12.13.1-alpine
 MAINTAINER ritadcalves
 
 USER root
