@@ -1,0 +1,38 @@
+{
+    "name": "systemtests",
+    "version": "0.0.0",
+    "description": "System Tests tests of the ak-iot-cloud application on aws",
+    "author": "Rita Alves",
+    "license": "ISC",
+    "optionalDependencies": {
+      "aws-sdk": "2.631.0"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.5.0",
+      "@babel/core": "^7.5.0",
+      "@babel/polyfill": "^7.4.4",
+      "@babel/preset-env": "^7.5.0",
+      "@babel/register": "^7.4.4",
+      "casual": "1.5.19",
+      "cucumber-pretty": "^6.0.0",
+      "dotenv": "5.0.1",
+      "eslint": "4.18.1",
+      "eslint-config-airbnb-base": "12.1.0",
+      "eslint-plugin-import": "2.9.0"
+    },
+    "dependencies": {
+      "assert": "^2.0.0",
+      "chai": "^4.2.0",
+      "chromedriver": "^83.0.0",
+      "cucumber": "^6.0.5",
+      "fs": "0.0.1-security",
+      "moment": "2.20.1",
+      "node-rsa": "0.4.2",
+      "selenium-webdriver": "^4.0.0-alpha.7",
+      "util": "0.10.3",
+      "uuid": "3.2.1",
+      "webdriver": "^5.11.12",
+      "xmlhttprequest": "^1.8.0"
+    }
+  }
+  
