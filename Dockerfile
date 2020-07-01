@@ -1,4 +1,4 @@
-FROM node:6.11.2
+FROM node:12.13.1-alpine
 LABEL MAINTAINER="ritadcalves"
 
 ENV DIR=/service
