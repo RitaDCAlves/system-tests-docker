@@ -1,15 +1,12 @@
-FROM node:12.13.1-alpine
+FROM selenium/standalone-chrome:84.0
 LABEL MAINTAINER="ritadcalves"
+USER root
 
-ENV DIR=/service
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 
-COPY package.json $DIR/package.json
+RUN apt-get update -y && \
+    apt-get -y --no-install-recommends install nodejs \
+    python3 python3-pip python3-venv python3-setuptools jq git && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN cd $DIR \
-    && npm install \
-    && npm install -g grunt
-
-RUN apk --no-cache update && \
-apk --no-cache add mysql-client python py-pip py-setuptools ca-certificates curl groff less jq && \
-pip --no-cache-dir install awscli && \
-rm -rf /var/cache/apk/*
+RUN pip3 --no-cache-dir install awscli
