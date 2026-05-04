@@ -30,7 +30,7 @@
       "node-rsa": "0.4.2",
       "selenium-webdriver": "^4.0.0-alpha.7",
       "util": "0.10.3",
-      "uuid": "3.2.1",
+      "uuid": "14.0.0",
       "webdriver": "^5.11.12",
       "xmlhttprequest": "^1.8.0"
     }
